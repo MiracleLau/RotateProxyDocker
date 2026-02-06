@@ -3,7 +3,7 @@
 
 # RotateProxy Docker 管理方案
 
-本项目是基于 [akkuman/rotateproxy](https://github.com/akkuman/rotateproxy) 的 Docker 化部署方案。通过自动爬取 FOFA 上的开放代理，实现一个动态旋转的本地 SOCKS5 代理服务。
+本项目是基于 [akkuman/rotateproxy](https://github.com/akkuman/rotateproxy) 的 Docker 化部署方案。通过自动爬取 FOFA 上的开放代理，实现一个动态的本地 SOCKS5 代理服务。
 
 ## 🚀 快速开始
 
@@ -12,8 +12,8 @@
 由于本项目使用 Git Submodule 管理核心源码，克隆时请务必带上 `--recursive` 参数：
 
 ```bash
-git clone --recursive <你的仓库地址>
-cd <项目目录>
+git clone --recursive https://github.com/MiracleLau/RotateProxyDocker.git
+cd RotateProxyDocker
 
 ```
 
