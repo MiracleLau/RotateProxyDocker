@@ -1,0 +1,3 @@
+[submodule "rotateproxy-src"]
+	path = rotateproxy-src
+	url = https://github.com/akkuman/rotateproxy.git

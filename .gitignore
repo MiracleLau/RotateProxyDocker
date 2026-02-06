@@ -1,0 +1,19 @@
+# 二进制文件
+rotateproxy
+rotateproxy.exe
+*.exe
+*.bin
+
+# 敏感配置文件 (极其重要)
+.env
+
+# 依赖与临时文件
+vendor/
+*.log
+tmp/
+.idea/
+.vscode/
+
+# 操作系统文件
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+# 忽略所有，然后排除我们需要的文件（黑名单转白名单模式，更干净）
+**
+!rotateproxy-src/**
+!.env
+
+# 但还是要排除子模块内部的 git 信息
+rotateproxy-src/.git
+rotateproxy-src/.git
+rotateproxy-src/.github/
+rotateproxy-src/README.md
+
+!Dockerfile

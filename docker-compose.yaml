@@ -1,0 +1,19 @@
+services:
+  rotateproxy:
+    build: .
+    container_name: rotateproxy
+    restart: always
+    ports:
+      - "5555:5555"
+    environment:
+      - TZ=Asia/Shanghai
+    # 使用数组格式，能完美处理包含 & 和引号的复杂字符串
+    command: [
+      "-l", "${LISTEN_ADDR}",
+      "-user", "${PROXY_USER}",
+      "-pass", "${PROXY_PASS}",
+      "-token", "${FOFA_TOKEN}",
+      "-email", "${FOFA_EMAIL}",
+      "-rule", "${SEARCH_RULE}",
+      "-page", "${PAGE_COUNT}"
+    ]
